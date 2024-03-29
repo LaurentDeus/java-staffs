@@ -15,7 +15,7 @@ var randomNumber = ro.nextInt(9) + 1;
 while(trials > 0){
 
 
-System.out.println("What number I'm I thinking: ");
+System.out.printf("%nWhat number I'm I thinking %nHint: it is between 1 and 10%n");
 
 var guess = input.nextInt();
 
