@@ -19,6 +19,18 @@ class MathEquation {
 
     }
 
+    public double getLeftVal() {
+        return this.leftVal;
+    }
+
+    public double getRightVal() {
+        return this.rightVal;
+    }
+
+    public double getOpcode() {
+        return this.opcode;
+    }
+
     public void setLeftVal(double leftVal) {
         this.leftVal = leftVal;
     }
