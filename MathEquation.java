@@ -47,10 +47,10 @@ class MathEquation {
 
         switch (opcode) {
 
-            case '+':
+            case 'a':
                 return leftVal + rightVal;
 
-            case '-':
+            case 's':
                 return leftVal - rightVal;
 
             case 'd':
