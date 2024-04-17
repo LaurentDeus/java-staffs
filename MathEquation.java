@@ -12,6 +12,13 @@ class MathEquation {
     private double rightVal;
     private char opcode;// a,s,d,m,r
 
+    public MathEquation(double lv, double rv, char opcode) {
+        this.leftVal = lv;
+        this.rightVal = rv;
+        this.opcode = opcode;
+
+    }
+
     public void setLeftVal(double leftVal) {
         this.leftVal = leftVal;
     }
