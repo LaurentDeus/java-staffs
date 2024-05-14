@@ -27,7 +27,7 @@ class MathEquation {
         return this.rightVal;
     }
 
-    public double getOpcode() {
+    public char getOpcode() {
         return this.opcode;
     }
 

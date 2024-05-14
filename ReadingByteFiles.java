@@ -54,7 +54,6 @@ public class ReadingByteFiles {
 		} catch (FileNotFoundException e) {
 			throw e;
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
