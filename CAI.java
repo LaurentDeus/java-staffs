@@ -8,12 +8,27 @@ public class CAI {
     SecureRandom sc;
     int firstNumber;
     int secondNumber;
+    int level;
     static final char[] ops = new char[] { '+', '-', 'x', '/' };/// enums??
+
+    public CAI(int level) {
+        this.level = level;
+    }
 
     public void initializeQuestion() {
         sc = new SecureRandom();
-        firstNumber = sc.nextInt(11);
-        secondNumber = sc.nextInt(11);
+
+        if (level == 1) {
+            firstNumber = sc.nextInt(10);
+            secondNumber = sc.nextInt(10);
+        } else if (level == 2) {
+            firstNumber = sc.nextInt(41) + 10;
+            secondNumber = sc.nextInt(41) + 10;
+        } else {
+            firstNumber = sc.nextInt(51) + 50;
+            secondNumber = sc.nextInt(41) + 50;
+        }
+
         question = new ArrayList<Integer>();
         question.add(firstNumber);
         question.add(secondNumber);
@@ -63,7 +78,7 @@ public class CAI {
 
     public static void main(String[] args) {
         final char[] ops = new char[] { '+', '-', 'x', '/' };/// enums??
-        var obj = new CAI();
+        var obj = new CAI(1);
         while (true) {
 
             var question = obj.askQuestion();
